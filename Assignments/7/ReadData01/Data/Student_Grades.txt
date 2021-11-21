@@ -1,5 +1,0 @@
-"Aaron","Sarson",80
-"Samantha","Saint", 72
-"Joe","Frank",63
-"Alex","Smith",92
-"Lexi","Windsor",88

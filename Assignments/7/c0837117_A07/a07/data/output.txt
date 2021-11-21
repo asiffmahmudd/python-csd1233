@@ -1,0 +1,37 @@
+STUDENT COUNT BY DEPARTMENT
+School of Business
+	Business
+		Freshman: 21
+		Sophomore: 11
+	Business TOTAL: 32
+	Business Admininistration - Accounting
+		Freshman: 27
+		Sophomore: 18
+		Junior: 12
+	Business Admininistration - Accounting TOTAL: 57
+	Business Analysis & Improvement
+		Freshman: 44
+	Business Analysis & Improvement TOTAL: 44
+School of Business TOTAL: 133
+School of Information Technology
+	Computer Programmer
+		Sophomore: 12
+	Computer Programmer TOTAL: 12
+	Computer Software & Database Development
+		Freshman: 17
+		Sophomore: 23
+	Computer Software & Database Development TOTAL: 40
+	Information Technology Professional
+		Freshman: 24
+	Information Technology Professional TOTAL: 24
+	Cyber Infrastructure Specialist
+		Sophomore: 22
+	Cyber Infrastructure Specialist TOTAL: 22
+School of Information Technology TOTAL: 98
+School of Nursing
+	Practical Nursing
+		Freshman: 26
+		Sophomore: 31
+	Practical Nursing TOTAL: 57
+School of Nursing TOTAL: 57
+COLLEGE WIDE TOTAL		288

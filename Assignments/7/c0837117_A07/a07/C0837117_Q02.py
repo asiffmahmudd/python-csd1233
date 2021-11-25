@@ -4,7 +4,7 @@
 # Date of submission: 2021-11-21
 
 #writing year in output file
-def write_year(prev_year, fp_output):
+def write_year(prev_year, fp_output,year_total):
     if(prev_year == "1"):
         fp_output.write("\n\t\tFreshman: "+str(year_total))
     elif(prev_year == "2"):
@@ -50,7 +50,7 @@ if __name__ == '__main__':
             is_first = False
         #processing years
         elif(curr_year != prev_year):
-            write_year(prev_year, fp_output)
+            write_year(prev_year, fp_output, year_total)
             program_total += year_total
             year_total = 0
             prev_year = curr_year
@@ -73,7 +73,7 @@ if __name__ == '__main__':
         else:
             year_total += 1            
     
-    write_year(prev_year, fp_output)
+    write_year(prev_year, fp_output, year_total)
     program_total += year_total
     school_total += program_total
     college_total += school_total

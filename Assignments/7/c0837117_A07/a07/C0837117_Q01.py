@@ -2,6 +2,7 @@
 # c0837117 - Asif Mahmud
 # Question 01
 # Date of submission: 2021-11-21
+import math
 
 #displaying menu
 def display_menu():
@@ -82,7 +83,6 @@ def insert_line(fp_scratch, adding_line):
     elif fp_scratch.tell() == 0:
         adding_line += "\n"
     fp_scratch.write(adding_line)
-    print("\nRecord inserted successfully")
 
 def insert_record(first, last, grade):
     adding_line = last + "," + first + "," + str(grade)
@@ -113,7 +113,7 @@ def insert_record(first, last, grade):
         
     if inserted == 0:
         fp_scratch.write("\n"+adding_line)
-        print("\nRecord successfully inserted: "+last+","+first+","+grade)
+    print("\nRecord successfully inserted: "+last+","+first+","+str(grade))
        
     fp_grades.close()
     fp_scratch.close()
@@ -193,17 +193,20 @@ def get_grade():
     grade = 0
     while True:
         try:
-            grade = int(round(float(input("Enter grade of the student: ")),0))
+            grade = float(input("Enter grade of the student: "))
             if grade < 0 or grade > 100:
                 raise Exception
         except:
             print("Invalid value for grade! Try again.")
         else:
             break;
+    if grade % 1 >= 0.5:
+        grade = math.ceil(grade)
+    else:
+        grade = math.floor(grade)
     return grade
         
 if __name__ == '__main__':
-    
     selection = get_menu_selection()
     
     while selection != 'E':
